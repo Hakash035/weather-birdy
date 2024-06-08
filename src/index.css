@@ -1,0 +1,177 @@
+body {
+  margin: 0 auto;
+}
+
+#logo {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+#navbar {
+  background-color: #242424;
+  color: antiquewhite;
+  height: 60px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-areas: "l h h h h . . . s s b . ";
+}
+
+#logo {
+  grid-area: l;
+  margin: auto 0px;
+  margin-left: 10%;
+}
+
+#head {
+  grid-area: h;
+  margin: auto 5px;
+  font-family: "Lobster", cursive;
+}
+
+#search {
+  grid-area: s;
+  height: 30px;
+  margin: auto 0px;
+  outline: none;
+  background-color: white;
+  border: none;
+  display: flex;
+  flex: 1;
+  border-radius: 3px;
+}
+
+#search:focus {
+  outline: none;
+  background-color: rgb(250, 234, 234);
+}
+
+#subtn {
+  grid-area: b;
+  height: 32px;
+  margin: auto 0px;
+  outline: none;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 2px;
+}
+
+#defm {
+  background: linear-gradient(to right, rgb(10, 9, 9), rgba(10, 9, 9, 0.95));
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+.noc {
+  padding: 10px;
+  font-family: "Poiret One", cursive;
+}
+#def {
+  flex-shrink: -1;
+  margin-right: 5px;
+  font-family: "Montserrat", sans-serif;
+  grid-column: 2/6;
+}
+#cards {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+.j {
+  grid-column: span(1);
+}
+.no {
+  padding: 10px;
+}
+#card {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-family: "Poiret One", cursive;
+}
+
+#head_card {
+  text-align: center;
+  font-family: "Lobster Two", cursive;
+  text-decoration: underline;
+}
+
+#ele {
+  color: antiquewhite;
+  display: none;
+}
+#ele1 {
+  display: none;
+}
+
+#form {
+  display: flex;
+}
+
+#uca {
+  font-family: "Poiret One", cursive;
+  grid-column: 7/8;
+}
+
+@media (max-width: 700px) {
+  #head {
+    font-size: 1rem;
+  }
+  #logo {
+    height: 35px;
+    width: 35px;
+  }
+  #cards {
+    display: grid;
+    /*grid-area: ". a b .", ". c d .", ". e f .", ". g h .";*/
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+  #c1 {
+    grid-area: a;
+    grid-row: span(1);
+    grid-column: span(1);
+  }
+  #c2 {
+    grid-area: b;
+    grid-row: span(1);
+    grid-column: span(1);
+  }
+  #c3 {
+    grid-area: c;
+    grid-row: span(1);
+    grid-column: span(1);
+  }
+  #c4 {
+    grid-area: d;
+    grid-row: span(1);
+    grid-column: span(1);
+  }
+  #c5 {
+    grid-area: e;
+    grid-row: span(1);
+    grid-column: span(1);
+  }
+  #c6 {
+    grid-area: f;
+    grid-row: span(1);
+    grid-column: span(1);
+  }
+  #c7 {
+    grid-area: g;
+    grid-row: span(1);
+    grid-column: span(1);
+  }
+  #c8 {
+    grid-area: h;
+    grid-row: span(1);
+    grid-column: span(1);
+  }
+  #navbar {
+    background-color: #242424;
+    color: antiquewhite;
+    height: 60px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas: "l h h h h . s s s s b . ";
+  }
+}
