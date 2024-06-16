@@ -7,7 +7,7 @@ function Call1(prop) {
 
 
 
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=7f29205adb81c2d4c1f4b5f85784fa0d`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=apikey`;
     const [users, setusers] = useState({})
 
     const getusers = async () => {
