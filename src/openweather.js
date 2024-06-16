@@ -5,7 +5,7 @@ export default axios.create({
     
     
     headers: {
-        appid : '7f29205adb81c2d4c1f4b5f85784fa0d'
+        appid : 'api-key-here'
         
     }
 })
